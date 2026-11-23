@@ -1,0 +1,22 @@
+[project]
+name = "quran-dataset"
+version = "0.1.0"
+description = "Verse-level Quran dataset (Arabic + English) with chunking strategies for RAG"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+quran-dataset = "quran_dataset.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: hits the live Quran Cloud API"]
+addopts = "-m 'not network'"
