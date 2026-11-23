@@ -65,5 +65,5 @@ Text comes from the [Quran Cloud API](https://alquran.cloud/api) (editions `qura
 Day 1 of a bilingual Quran RAG project:
 
 1. **quran-dataset**: data and chunking (this repo)
-2. arabic-embed-bench: which embedding model retrieves Arabic and English best
+2. [arabic-embed-bench](https://github.com/RawiaAhmed/arabic-embed-bench): which embedding model retrieves Arabic and English best
 3. quran-rag: hybrid search, reranking and verse-cited answers
