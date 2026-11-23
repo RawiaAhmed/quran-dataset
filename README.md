@@ -1,5 +1,7 @@
 # quran-dataset
 
+[![CI](https://github.com/RawiaAhmed/quran-dataset/actions/workflows/ci.yml/badge.svg)](https://github.com/RawiaAhmed/quran-dataset/actions/workflows/ci.yml)
+
 A clean, verse-level dataset of the Quran in Arabic (Uthmani script) and English (Saheeh International), plus three chunking strategies measured side by side. It is the data layer for a bilingual RAG system: before choosing an embedding model or a retriever, you need to know what a "document" is.
 
 Built with the Python standard library only. One command downloads, cleans and chunks all 6,236 verses.
